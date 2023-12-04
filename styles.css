@@ -1,0 +1,154 @@
+html{
+  box-sizing: border-box;
+} 
+ body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+ }
+  .navbar{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  }
+  .logo{
+  margin-left: 25px ;
+  margin-top: auto;
+  margin-bottom: auto;
+  }
+  .logo a{
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  }
+  .navlinks{
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  }
+  .nav-items a{
+  text-decoration: none;
+  color: #000;
+  margin-right: 25px;
+
+  }
+  .main-box{
+  display: flex;
+  margin: 20px 20px 20px 20px ;
+
+  }
+  .beach-image{
+  border-radius: 10px;
+  margin-right: 25px;
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  }
+  .open-text{
+  flex: 2;
+  }
+
+    @keyframes color-change {
+    from {color: black;}
+     to {color: blue;}
+   }
+  .h1-main{
+    font-size: 24pt;
+    animation-name: color-change;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  article{
+    --article-bg-color: #ddd;
+    --article-main-color: rgb(92, 91, 91);
+    --article-padding: auto 0;
+    --article-margin: 20px 0;
+    --article-max-width: 300px;
+    --article-width: 100%;
+    --article-height: auto;
+    --article-display: flex;
+  }
+  .tl-article{
+  margin: var(--article-margin);
+  display: var(--article-display);
+    }
+  .journey-callout{
+  text-align: center;
+  }
+  main{
+  width: 80%;
+  margin: 0 auto;
+  }
+  .tl-photo{
+  border-radius: 10px;
+  width: var(--article-width);
+  height: var(var(--article-height));
+  max-width: var(--article-max-width);
+  margin: auto 0; 
+  }
+  .tl-h2, .tl-p {
+  padding-left: 25px;
+  }
+  .tl-p {
+  padding-right: 50px;
+  color: var(--article-main-color);
+  }
+  .button{
+  text-decoration: none;
+  text-align: center;
+  background-color: darkgray;
+  border-radius: 10px;
+  margin-left: 25px;
+  color: aliceblue;
+  padding: 5px;
+  }
+
+/*====Media Quieres====*/
+@media screen and (max-width: 740px) {
+  nav,.navlinks,section,article{
+    flex-direction: column;
+  }
+  .nav-items {
+    margin: 20px auto 20px auto;
+  }
+  
+  .logo{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .beach-image{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .tl-photo{
+    max-width: 100%;
+  }
+  
+  
+}
+
+@media screen and (max-width: 900px) {
+  section,article{
+    flex-direction: column;
+  }
+  article{
+    margin-top: 25px;
+  }
+  .beach-image{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .tl-photo{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+}
